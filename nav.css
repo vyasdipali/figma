@@ -4,7 +4,7 @@
     justify-content: center;
     /* overflow-x: hidden; */
     border: 1px solid red;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .Main {
@@ -200,7 +200,7 @@ figure img {
     justify-content: space-between;
     display: flex;
     margin-top: 8vmax;
-    padding: 0px 110px;
+    padding: 0px 215px;
 }
 
 
@@ -246,6 +246,15 @@ figure img {
     height: 80px;
     margin: -68px;
     /* margin-inline: ; */
+}
+
+.plus-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-top: 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .box2 {
@@ -295,7 +304,8 @@ figure img {
     box-shadow: 0px 2px 20px rgba(122, 122, 122, 0.3);
     border-radius: 15px;
 }
-.box3-3{
+
+.box3-3 {
     border-radius: 50px;
     width: 85px;
     height: 85px;
@@ -305,21 +315,24 @@ figure img {
     margin-top: -53px;
 
 }
-.heart-img{
+
+.heart-img {
     width: 53px;
     height: 80px;
     margin: 5px;
     margin-inline: 18px;
-    margin-top: -15px;
-    
+    /* margin-top: -5px; */
+
 }
-.bets-set{
+
+.bets-set {
     position: absolute;
     margin-left: 19px;
     margin-top: 16px;
     width: 46px;
     height: 29px;
     margin-inline: 17px;
+    margin-top: 30px;
 }
 
 .tesx2 {
@@ -333,6 +346,46 @@ figure img {
     text-align: center;
     color: #4F4F4F;
 }
+
+.menu-burger-container {
+    position: relative;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    display: none;
+
+
+}
+
+.burger-line {
+    width: 20px;
+    height: 1.5px;
+    border-radius: 5px;
+    background: red;
+}
+
+.burger-line-2 {
+    top: 8px;
+    position: absolute;
+    width: 20px;
+    height: 1.3px;
+    border-radius: 5px;
+    bottom: 0px !important;
+    background: red;
+
+}
+
+.burger-line-3 {
+    top: 14px;
+    position: absolute;
+    width: 20px;
+    height: 1.4px;
+    border-radius: 5px;
+    bottom: 0px !important;
+    background: red;
+
+}
+
 
 .get {
     font-family: 'Poppins';
@@ -357,7 +410,6 @@ figure img {
     padding-inline-start: 6pc;
     margin: -7pc;
 
-
     color: #313131;
 
 }
@@ -368,7 +420,9 @@ figure img {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+/*  */
+
+@media only screen and (max-width: 511px) {
     .menu-link-button-container {
         flex-direction: column !important;
     }
@@ -390,18 +444,57 @@ figure img {
     }
 }
 
-/* @media only screen and (max-width:1200px) {
+@media only screen and (max-width:1200px) {
     .why {
         flex-direction: column;
     }
 
-} */
-
-@media only screen and (max-width:1000px) {
-    .mainbox {
+}
+@media only screen and (max-width:1200px) {
+    .why {
         flex-direction: column;
     }
+
 }
+@media only screen and (max-width:700px) {
+    .why {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:1400px) {
+    .mainbox {
+        width: fit-content;
+        height: fit-content;
+        padding-left: 171px;
+    
+    }
+    
+}
+
+@media only screen and (max-width:1285px){
+.mainbox {
+    width: fit-content;
+    height: fit-content;
+    padding-left: 50px;
+
+}
+}
+@media only screen and (max-width:600px) {
+    .mainbox {
+        flex-direction: column;
+        padding-left: 13pc
+   
+    }
+}
+
+/* @media only screen and (max-width:800px) {
+    .mainbox {
+        padding: 0px 118px
+    }
+} */
+
 
 @media only screen and (max-width:620px) {
     .fig {
@@ -418,9 +511,18 @@ figure img {
     }
 
 }
-
-@media only screen and (max-width:507px) {
-    .health {
-        flex-direction: column;
+@media only screen and (max-width: 800px) {
+    .menu-link-button-container {
+        display: none;
     }
+
+    .menu-burger-container {
+        display: block;
+        margin-left: 20pc;
+    margin-top: -28px;
+
+
+    }
+
 }
+
